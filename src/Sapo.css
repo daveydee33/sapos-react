@@ -1,0 +1,8 @@
+
+/* Should I put this in index.css or App.css instead ? */
+.card {
+  background-color: lightblue;
+  margin: 10px;
+  text-align: left;
+  padding: 5px;
+}
