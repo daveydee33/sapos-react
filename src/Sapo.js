@@ -13,7 +13,8 @@ class Sapo extends Component {
         Hobbies:
         <ol>
           {this.props.sapo.hobbies.map(function (item) {
-            return <li>{item}</li>
+            console.log(item);
+            return <li key={item}>{item}</li>
           })}
         </ol>
       </div>

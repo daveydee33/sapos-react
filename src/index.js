@@ -5,17 +5,18 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 // Data source
-const data = {
-  header: "Los Sapos",
-  sapos: [{ 
+const header = 'Los Sapos';
+const sapos = [
+  { 
     name: "Dave",
     hobbies: ["one", "two", "three"]
   }, 
   { 
     name: "Hector",
     hobbies: ["uno..", "dos....", "tres......."] 
-  }]
-}
+  }
+];
 
-ReactDOM.render(<App data={data} />, document.getElementById('root'));
+
+ReactDOM.render(<App header={header} sapos={sapos} />, document.getElementById('root'));
 registerServiceWorker();

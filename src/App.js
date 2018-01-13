@@ -9,15 +9,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>{this.props.data.header}</h1>
+        <h1>{this.props.header}</h1>
 
         <p>Sapo details...</p>
 
-          {
-            this.props.data.sapos.map(function(sapo) {
-              return <Sapo sapo={sapo} />
-            })
-          }
+        {
+          this.props.sapos.map(function(sapo) {
+            return <Sapo key={sapo.name} sapo={sapo} />
+          })
+        }
 
 
       </div>
